@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vstgui-ui-description version="1">
+	<fonts>
+	</fonts>
+	<colors>
+		<color name="Bg" rgba="#14171cff"/>
+		<color name="Panel" rgba="#20252ec8"/>
+		<color name="Panel Alt" rgba="#191e26d0"/>
+		<color name="Track" rgba="#2a313cff"/>
+		<color name="Line" rgba="#3a4350ff"/>
+		<color name="Text" rgba="#f4f7fbff"/>
+		<color name="Muted" rgba="#a9b4c4ff"/>
+		<color name="Accent" rgba="#2fc7b7ff"/>
+		<color name="Accent Soft" rgba="#1f706aff"/>
+		<color name="Amber" rgba="#f2b24cff"/>
+		<color name="Amber Soft" rgba="#815d2fff"/>
+		<color name="Bypass" rgba="#d65f5fff"/>
+		<color name="Bypass Soft" rgba="#773838ff"/>
+		<color name="Edit" rgba="#11151bff"/>
+	</colors>
+	<template background-color="Bg" bitmap="background" class="CViewContainer" maxSize="720, 440" minSize="720, 440" mouse-enabled="true" name="view" opacity="1" origin="0, 0" size="720, 440" transparent="false">
+		<view back-color="Bg" class="CTextLabel" font="~ NormalFontVeryBig" font-antialias="true" font-color="Text" frame-color="Bg" frame-width="0" mouse-enabled="false" origin="28, 18" size="290, 32" style-no-frame="true" style-round-rect="false" text-alignment="left" title="Vocal DeVerb" transparent="true"/>
+		<view back-color="Bg" class="CTextLabel" font="~ NormalFontSmall" font-antialias="true" font-color="Muted" frame-color="Bg" frame-width="0" mouse-enabled="false" origin="31, 52" size="315, 20" style-no-frame="true" text-alignment="left" title="direct VST3 dereverb processor" transparent="true"/>
+		<view back-color="Accent Soft" class="CTextLabel" font="~ NormalFontSmall" font-antialias="true" font-color="Accent" frame-color="Accent Soft" frame-width="1" mouse-enabled="false" origin="590, 24" round-rect-radius="7" size="96, 24" style-round-rect="true" text-alignment="center" title="v0.1.5" transparent="false"/>
+
+		<view background-color="Panel" class="CViewContainer" mouse-enabled="true" origin="28, 92" size="430, 314" transparent="false">
+			<view back-color="Panel" class="CTextLabel" font="~ NormalFontBig" font-antialias="true" font-color="Text" frame-color="Panel" frame-width="0" mouse-enabled="false" origin="20, 17" size="250, 24" style-no-frame="true" text-alignment="left" title="Dereverb Engine" transparent="true"/>
+			<view back-color="Panel" class="CTextLabel" font="~ NormalFontSmall" font-antialias="true" font-color="Muted" frame-color="Panel" frame-width="0" mouse-enabled="false" origin="22, 42" size="350, 18" style-no-frame="true" text-alignment="left" title="shape tail reduction without flattening the vocal" transparent="true"/>
+
+			<view back-color="Panel" class="CTextLabel" font="~ NormalFont" font-antialias="true" font-color="Text" frame-color="Panel" frame-width="0" mouse-enabled="false" origin="24, 78" size="150, 20" style-no-frame="true" text-alignment="left" title="Amount" transparent="true"/>
+			<view class="CSlider" control-tag="Amount" default-value="0.55" draw-back="true" draw-back-color="Track" draw-frame="true" draw-frame-color="Line" draw-value="true" draw-value-color="Accent" frame-width="1" max-value="1" min-value="0" mode="free click" mouse-enabled="true" opacity="1" orientation="horizontal" origin="176, 82" reverse-orientation="false" size="170, 14" transparent="false" wheel-inc-value="0.01" zoom-factor="1"/>
+			<view back-color="Edit" class="CTextEdit" control-tag="Amount" default-value="0.55" font="~ NormalFontSmall" font-antialias="true" font-color="Text" frame-color="Line" frame-width="1" immediate-text-change="false" max-value="1" min-value="0" mouse-enabled="true" origin="358, 75" round-rect-radius="5" size="50, 26" style-round-rect="true" text-alignment="center" title="55" transparent="false" value-precision="1" wheel-inc-value="0.01"/>
+
+			<view back-color="Panel" class="CTextLabel" font="~ NormalFont" font-antialias="true" font-color="Text" frame-color="Panel" frame-width="0" mouse-enabled="false" origin="24, 124" size="150, 20" style-no-frame="true" text-alignment="left" title="Sensitivity" transparent="true"/>
+			<view class="CSlider" control-tag="Sensitivity" default-value="0.45" draw-back="true" draw-back-color="Track" draw-frame="true" draw-frame-color="Line" draw-value="true" draw-value-color="Accent" frame-width="1" max-value="1" min-value="0" mode="free click" mouse-enabled="true" opacity="1" orientation="horizontal" origin="176, 128" reverse-orientation="false" size="170, 14" transparent="false" wheel-inc-value="0.01" zoom-factor="1"/>
+			<view back-color="Edit" class="CTextEdit" control-tag="Sensitivity" default-value="0.45" font="~ NormalFontSmall" font-antialias="true" font-color="Text" frame-color="Line" frame-width="1" immediate-text-change="false" max-value="1" min-value="0" mouse-enabled="true" origin="358, 121" round-rect-radius="5" size="50, 26" style-round-rect="true" text-alignment="center" title="45" transparent="false" value-precision="1" wheel-inc-value="0.01"/>
+
+			<view back-color="Panel" class="CTextLabel" font="~ NormalFont" font-antialias="true" font-color="Text" frame-color="Panel" frame-width="0" mouse-enabled="false" origin="24, 170" size="150, 20" style-no-frame="true" text-alignment="left" title="Tail Release" transparent="true"/>
+			<view class="CSlider" control-tag="Tail Release" default-value="0.321429" draw-back="true" draw-back-color="Track" draw-frame="true" draw-frame-color="Line" draw-value="true" draw-value-color="Amber" frame-width="1" max-value="1" min-value="0" mode="free click" mouse-enabled="true" opacity="1" orientation="horizontal" origin="176, 174" reverse-orientation="false" size="170, 14" transparent="false" wheel-inc-value="0.01" zoom-factor="1"/>
+			<view back-color="Edit" class="CTextEdit" control-tag="Tail Release" default-value="0.321429" font="~ NormalFontSmall" font-antialias="true" font-color="Text" frame-color="Line" frame-width="1" immediate-text-change="false" max-value="1" min-value="0" mouse-enabled="true" origin="358, 167" round-rect-radius="5" size="50, 26" style-round-rect="true" text-alignment="center" title="220" transparent="false" value-precision="0" wheel-inc-value="0.01"/>
+
+			<view back-color="Panel" class="CTextLabel" font="~ NormalFont" font-antialias="true" font-color="Text" frame-color="Panel" frame-width="0" mouse-enabled="false" origin="24, 216" size="150, 20" style-no-frame="true" text-alignment="left" title="Vocal Preserve" transparent="true"/>
+			<view class="CSlider" control-tag="Vocal Preserve" default-value="0.65" draw-back="true" draw-back-color="Track" draw-frame="true" draw-frame-color="Line" draw-value="true" draw-value-color="Accent" frame-width="1" max-value="1" min-value="0" mode="free click" mouse-enabled="true" opacity="1" orientation="horizontal" origin="176, 220" reverse-orientation="false" size="170, 14" transparent="false" wheel-inc-value="0.01" zoom-factor="1"/>
+			<view back-color="Edit" class="CTextEdit" control-tag="Vocal Preserve" default-value="0.65" font="~ NormalFontSmall" font-antialias="true" font-color="Text" frame-color="Line" frame-width="1" immediate-text-change="false" max-value="1" min-value="0" mouse-enabled="true" origin="358, 213" round-rect-radius="5" size="50, 26" style-round-rect="true" text-alignment="center" title="65" transparent="false" value-precision="1" wheel-inc-value="0.01"/>
+
+			<view back-color="Panel Alt" class="CTextLabel" font="~ NormalFontSmall" font-antialias="true" font-color="Muted" frame-color="Line" frame-width="1" mouse-enabled="false" origin="24, 262" round-rect-radius="6" size="384, 28" style-round-rect="true" text-alignment="center" title="Start moderate, then raise Amount and Sensitivity until room tail steps back." transparent="false"/>
+		</view>
+
+		<view background-color="Panel Alt" class="CViewContainer" mouse-enabled="true" origin="480, 92" size="212, 314" transparent="false">
+			<view back-color="Panel Alt" class="CTextLabel" font="~ NormalFontBig" font-antialias="true" font-color="Text" frame-color="Panel Alt" frame-width="0" mouse-enabled="false" origin="20, 17" size="150, 24" style-no-frame="true" text-alignment="left" title="Output" transparent="true"/>
+			<view back-color="Panel Alt" class="CTextLabel" font="~ NormalFontSmall" font-antialias="true" font-color="Muted" frame-color="Panel Alt" frame-width="0" mouse-enabled="false" origin="22, 42" size="150, 18" style-no-frame="true" text-alignment="left" title="blend and level" transparent="true"/>
+
+			<view back-color="Panel Alt" class="CTextLabel" font="~ NormalFont" font-antialias="true" font-color="Text" frame-color="Panel Alt" frame-width="0" mouse-enabled="false" origin="22, 78" size="110, 20" style-no-frame="true" text-alignment="left" title="Dry/Wet" transparent="true"/>
+			<view class="CSlider" control-tag="Dry/Wet" default-value="0.8" draw-back="true" draw-back-color="Track" draw-frame="true" draw-frame-color="Line" draw-value="true" draw-value-color="Accent" frame-width="1" max-value="1" min-value="0" mode="free click" mouse-enabled="true" opacity="1" orientation="horizontal" origin="22, 106" reverse-orientation="false" size="120, 14" transparent="false" wheel-inc-value="0.01" zoom-factor="1"/>
+			<view back-color="Edit" class="CTextEdit" control-tag="Dry/Wet" default-value="0.8" font="~ NormalFontSmall" font-antialias="true" font-color="Text" frame-color="Line" frame-width="1" immediate-text-change="false" max-value="1" min-value="0" mouse-enabled="true" origin="154, 100" round-rect-radius="5" size="38, 26" style-round-rect="true" text-alignment="center" title="80" transparent="false" value-precision="1" wheel-inc-value="0.01"/>
+
+			<view back-color="Panel Alt" class="CTextLabel" font="~ NormalFont" font-antialias="true" font-color="Text" frame-color="Panel Alt" frame-width="0" mouse-enabled="false" origin="22, 148" size="110, 20" style-no-frame="true" text-alignment="left" title="Output Gain" transparent="true"/>
+			<view class="CSlider" control-tag="Output Gain" default-value="0.5" draw-back="true" draw-back-color="Track" draw-frame="true" draw-frame-color="Line" draw-value="true" draw-value-color="Amber" frame-width="1" max-value="1" min-value="0" mode="free click" mouse-enabled="true" opacity="1" orientation="horizontal" origin="22, 176" reverse-orientation="false" size="120, 14" transparent="false" wheel-inc-value="0.01" zoom-factor="1"/>
+			<view back-color="Edit" class="CTextEdit" control-tag="Output Gain" default-value="0.5" font="~ NormalFontSmall" font-antialias="true" font-color="Text" frame-color="Line" frame-width="1" immediate-text-change="false" max-value="1" min-value="0" mouse-enabled="true" origin="154, 170" round-rect-radius="5" size="38, 26" style-round-rect="true" text-alignment="center" title="0" transparent="false" value-precision="1" wheel-inc-value="0.01"/>
+
+			<view class="CTextButton" control-tag="Bypass" default-value="0" font="~ NormalFontBig" frame-color="Bypass Soft" frame-color-highlighted="Bypass" frame-width="1" gradient="Bypass Button" gradient-highlighted="Bypass Button On" kick-style="false" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="22, 226" round-radius="7" size="170, 42" text-alignment="center" text-color="Text" text-color-highlighted="Text" title="Bypass" transparent="false" wheel-inc-value="1"/>
+		</view>
+	</template>
+	<variables/>
+	<custom>
+		<attributes color="Accent" enabled="true" name="FocusDrawing" width="1"/>
+	</custom>
+	<bitmaps>
+		<bitmap name="background" path="background_2x.png"/>
+	</bitmaps>
+	<control-tags>
+		<control-tag name="Amount" tag="100"/>
+		<control-tag name="Sensitivity" tag="101"/>
+		<control-tag name="Tail Release" tag="102"/>
+		<control-tag name="Vocal Preserve" tag="103"/>
+		<control-tag name="Dry/Wet" tag="104"/>
+		<control-tag name="Output Gain" tag="105"/>
+		<control-tag name="Bypass" tag="106"/>
+	</control-tags>
+	<gradients>
+		<gradient name="Bypass Button">
+			<color-stop rgba="#252b34ff" start="0"/>
+			<color-stop rgba="#181d24ff" start="1"/>
+		</gradient>
+		<gradient name="Bypass Button On">
+			<color-stop rgba="#d65f5fff" start="0"/>
+			<color-stop rgba="#773838ff" start="1"/>
+		</gradient>
+	</gradients>
+</vstgui-ui-description>

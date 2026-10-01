@@ -1,0 +1,17 @@
+build/
+build-*/
+out/
+.vs/
+.vscode/
+CMakeUserPresets.json
+*.user
+*.suo
+*.VC.db
+*.opensdf
+*.sdf
+*.opendb
+*.log
+*.vst3/
+_deps/
+
+.Codex/

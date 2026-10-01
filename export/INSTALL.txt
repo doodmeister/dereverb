@@ -1,0 +1,13 @@
+Vocal DeVerb 0.1.5 - VST3 plug-in for Windows (64-bit)
+
+Install
+1. Unzip. You get a folder named VocalDeVerb.vst3 - keep the whole folder together.
+2. Copy that folder to:  C:\Program Files\Common Files\VST3
+   (Windows will ask for admin permission.)
+3. Rescan plug-ins in your DAW, then look for "Vocal DeVerb" (vendor: Local Audio).
+   Reaper: Options > Preferences > Plug-ins > VST > Re-scan.
+
+If an older version is installed, close your DAW and replace the old folder first.
+
+If the plug-in doesn't show up or fails to load, install the Microsoft Visual C++
+Redistributable (x64):  https://aka.ms/vs/17/release/vc_redist.x64.exe
