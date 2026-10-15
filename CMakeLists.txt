@@ -14,6 +14,9 @@ set(DEREVERB_VST3SDK_TAG "v3.8.0_build_66" CACHE STRING "Steinberg VST3 SDK tag 
 set(SMTG_ENABLE_VST3_HOSTING_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(SMTG_ENABLE_VST3_PLUGIN_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(SMTG_ENABLE_VSTGUI_SUPPORT ON CACHE BOOL "" FORCE)
+# Static CRT: hosts like Adobe Audition load their own (possibly older) MSVCP140.dll,
+# which silently fails the plug-in load. Also removes the vc_redist requirement.
+set(SMTG_USE_STATIC_CRT ON CACHE BOOL "" FORCE)
 
 if(vst3sdk_SOURCE_DIR AND NOT DEREVERB_VST3SDK_SOURCE_DIR)
     set(DEREVERB_VST3SDK_SOURCE_DIR "${vst3sdk_SOURCE_DIR}")
